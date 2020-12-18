@@ -1,0 +1,148 @@
+﻿@page "/"
+@inject HttpClient Http
+
+@using System.Runtime.Serialization;
+@using System.Threading.Tasks;
+@using System;
+
+<h3>EAD CA3</h3>
+
+
+@if (data == null)
+{
+    <p><em>Loading Data...</em></p>
+}
+else
+{
+<div>
+    
+    <input id="searchTerm" placeholder="Search Drinks..." @onkeyup="Search" @bind="searchTerm" />
+    <button @onclick="Search">Search</button>
+</div>
+    
+        
+    
+    <br />
+
+    @if (found)
+    {
+        <div>
+            Name: @data.drinks[0].strDrink
+        </div>
+        <div>
+            Glass Type: @data.drinks[0].strGlass
+        </div>
+        <div>
+            Image Link: @data.drinks[0].strImageSource
+        </div>
+        <div>
+            <br/>
+            Instructions: @data.drinks[0].strInstructions 
+            <br/>
+        </div>
+    }
+
+
+}
+@errorMess
+
+
+@code {
+
+
+    private String searchTerm = "margarita";
+    private bool found;
+    private Root data;
+    private string errorMess;
+
+
+    private async Task getHPAsync()
+    {
+
+        try
+        {
+            string uri = "https://www.thecocktaildb.com/api/json/v1/1/search.php?s=" + searchTerm;
+            data = await Http.GetFromJsonAsync<Root>(uri);
+            found = true;
+            errorMess = string.Empty;
+        }
+        catch (Exception e)
+        {
+            found = false;
+            errorMess = e.Message;
+        }
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        await getHPAsync();
+    }
+
+    public async void Search()
+    {
+        await getHPAsync();
+        StateHasChanged();
+    }
+
+
+
+
+
+
+    public class Drink
+    {
+        public string idDrink { get; set; }
+        public string strDrink { get; set; }
+        public object strDrinkAlternate { get; set; }
+        public string strTags { get; set; }
+        public object strVideo { get; set; }
+        public string strCategory { get; set; }
+        public string strIBA { get; set; }
+        public string strAlcoholic { get; set; }
+        public string strGlass { get; set; }
+        public string strInstructions { get; set; }
+        public string strDrinkThumb { get; set; }
+        public string strIngredient1 { get; set; }
+        public string strIngredient2 { get; set; }
+        public string strIngredient3 { get; set; }
+        public string strIngredient4 { get; set; }
+        public string strIngredient5 { get; set; }
+        public string strIngredient6 { get; set; }
+        public string strIngredient7 { get; set; }
+        public object strIngredient8 { get; set; }
+        public object strIngredient9 { get; set; }
+        public object strIngredient10 { get; set; }
+        public object strIngredient11 { get; set; }
+        public object strIngredient12 { get; set; }
+        public object strIngredient13 { get; set; }
+        public object strIngredient14 { get; set; }
+        public object strIngredient15 { get; set; }
+        public string strMeasure1 { get; set; }
+        public string strMeasure2 { get; set; }
+        public string strMeasure3 { get; set; }
+        public string strMeasure4 { get; set; }
+        public string strMeasure5 { get; set; }
+        public string strMeasure6 { get; set; }
+        public string strMeasure7 { get; set; }
+        public object strMeasure8 { get; set; }
+        public object strMeasure9 { get; set; }
+        public object strMeasure10 { get; set; }
+        public object strMeasure11 { get; set; }
+        public object strMeasure12 { get; set; }
+        public object strMeasure13 { get; set; }
+        public object strMeasure14 { get; set; }
+        public object strMeasure15 { get; set; }
+        public string strImageSource { get; set; }
+        public string strImageAttribution { get; set; }
+        public string strCreativeCommonsConfirmed { get; set; }
+        public string dateModified { get; set; }
+    }
+
+    public class Root
+    {
+        public List<Drink> drinks { get; set; }
+    }
+
+
+
+}

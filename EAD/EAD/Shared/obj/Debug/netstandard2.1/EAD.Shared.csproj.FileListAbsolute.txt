@@ -1,9 +1,0 @@
-C:\Users\Niall\Desktop\EAD_CA3\EAD\EAD\Shared\bin\Debug\netstandard2.1\EAD.Shared.deps.json
-C:\Users\Niall\Desktop\EAD_CA3\EAD\EAD\Shared\bin\Debug\netstandard2.1\EAD.Shared.dll
-C:\Users\Niall\Desktop\EAD_CA3\EAD\EAD\Shared\bin\Debug\netstandard2.1\EAD.Shared.pdb
-C:\Users\Niall\Desktop\EAD_CA3\EAD\EAD\Shared\obj\Debug\netstandard2.1\EAD.Shared.csprojAssemblyReference.cache
-C:\Users\Niall\Desktop\EAD_CA3\EAD\EAD\Shared\obj\Debug\netstandard2.1\EAD.Shared.AssemblyInfoInputs.cache
-C:\Users\Niall\Desktop\EAD_CA3\EAD\EAD\Shared\obj\Debug\netstandard2.1\EAD.Shared.AssemblyInfo.cs
-C:\Users\Niall\Desktop\EAD_CA3\EAD\EAD\Shared\obj\Debug\netstandard2.1\EAD.Shared.csproj.CoreCompileInputs.cache
-C:\Users\Niall\Desktop\EAD_CA3\EAD\EAD\Shared\obj\Debug\netstandard2.1\EAD.Shared.dll
-C:\Users\Niall\Desktop\EAD_CA3\EAD\EAD\Shared\obj\Debug\netstandard2.1\EAD.Shared.pdb
