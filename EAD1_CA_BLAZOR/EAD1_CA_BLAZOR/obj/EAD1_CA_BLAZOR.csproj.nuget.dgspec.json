@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Niall\\Desktop\\EAD_CA3\\EAD1_CA_BLAZOR\\EAD1_CA_BLAZOR\\EAD1_CA_BLAZOR.csproj": {}
+    "C:\\Users\\Niall\\Desktop\\EAD_CA3\\EAD_CA3\\EAD1_CA_BLAZOR\\EAD1_CA_BLAZOR\\EAD1_CA_BLAZOR.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Niall\\Desktop\\EAD_CA3\\EAD1_CA_BLAZOR\\EAD1_CA_BLAZOR\\EAD1_CA_BLAZOR.csproj": {
+    "C:\\Users\\Niall\\Desktop\\EAD_CA3\\EAD_CA3\\EAD1_CA_BLAZOR\\EAD1_CA_BLAZOR\\EAD1_CA_BLAZOR.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Niall\\Desktop\\EAD_CA3\\EAD1_CA_BLAZOR\\EAD1_CA_BLAZOR\\EAD1_CA_BLAZOR.csproj",
+        "projectUniqueName": "C:\\Users\\Niall\\Desktop\\EAD_CA3\\EAD_CA3\\EAD1_CA_BLAZOR\\EAD1_CA_BLAZOR\\EAD1_CA_BLAZOR.csproj",
         "projectName": "EAD1_CA_BLAZOR",
-        "projectPath": "C:\\Users\\Niall\\Desktop\\EAD_CA3\\EAD1_CA_BLAZOR\\EAD1_CA_BLAZOR\\EAD1_CA_BLAZOR.csproj",
+        "projectPath": "C:\\Users\\Niall\\Desktop\\EAD_CA3\\EAD_CA3\\EAD1_CA_BLAZOR\\EAD1_CA_BLAZOR\\EAD1_CA_BLAZOR.csproj",
         "packagesPath": "C:\\Users\\Niall\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Niall\\Desktop\\EAD_CA3\\EAD1_CA_BLAZOR\\EAD1_CA_BLAZOR\\obj\\",
+        "outputPath": "C:\\Users\\Niall\\Desktop\\EAD_CA3\\EAD_CA3\\EAD1_CA_BLAZOR\\EAD1_CA_BLAZOR\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
